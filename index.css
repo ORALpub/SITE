@@ -1,0 +1,92 @@
+
+
+.oralo {
+position: fixed; 
+bottom: -31px;
+right: 1px; 
+width:369px; 
+height: auto;
+z-index: -5; 
+}
+
+
+body {
+  font-family: Garamond;
+  margin: 0; 
+  padding: 0; 
+}
+
+a:hover {
+color: black; 
+text-shadow: -3px -3px black;
+font-size: 39px;
+}
+
+a:active {
+color: black; 
+}
+  
+a {
+color: black; 
+text-decoration: none;
+}
+
+.now {
+position: fixed;
+right: 54px; 
+bottom: 91px;
+font-size:21px; 
+}
+.info {
+position: fixed;
+right: 65px; 
+bottom: 73px;
+font-size:21px; 
+}
+
+.somos {
+position: fixed;
+right: 3px; 
+bottom: 55px;
+font-size:21px; 
+}
+.tienda {
+position: fixed;
+right: 44px; 
+bottom: 37px;
+font-size:21px; 
+}
+
+.face {
+position: fixed;
+right:60px; 
+bottom:19px;
+font-size:21px; 
+}	
+
+.twit {
+position: fixed;
+right: 57px; 
+bottom: 1px; 
+font-size:21px; 
+}
+
+
+.julymain {
+z-index: -100; 
+position: relative; 
+width: 180vw;
+margin:-3vw;
+padding: 0;
+}
+
+
+@media (max-width: 700px) {
+
+  .julymain {
+    width: initial;
+    height: 100vh;
+    margin: 0;
+  }
+
+}
