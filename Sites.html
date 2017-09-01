@@ -1,0 +1,681 @@
+<html>
+	
+<head>
+<title>ORAL
+</title>
+<link rel="shortcut icon" href="OralO.png" />
+<meta name="description" content="ORAL: Websites that act as la literatura/el arte">
+<style>
+
+	.oralo {
+	position: fixed; 
+	bottom: -31;
+	right: 1; 
+	width:369; 
+	height: auto;
+	z-index: -5; 
+	}
+	
+	
+	body {
+	font-family: Garamond;
+	margin: none; 
+	padding: none; 
+	}
+
+
+	a:hover {
+	color: black; 
+	text-shadow: -3px -3px black;
+	font-size: 39;
+	}
+	
+	a:active {
+	color: black; 
+	}
+
+	
+	a {
+	color: black; 
+	text-decoration: none;
+	}
+	
+	.now {
+	position: fixed;
+	right: 54; 
+	bottom: 91;
+	font-size:21; 
+	}
+
+	.info {
+	position: fixed;
+	right: 65; 
+	bottom: 73;
+	font-size:21; 
+	}
+	
+	.somos {
+	position: fixed;
+	right: 3; 
+	bottom: 55;
+	font-size:21; 
+	}
+
+	.tienda {
+	position: fixed;
+	right: 44; 
+	bottom: 37;
+	font-size:21; 
+	}
+	
+	.face {
+	position: fixed;
+	right:60; 
+	bottom:19;
+	font-size:21; 
+	}	
+	
+	.twit {
+	position: fixed;
+	right: 57; 
+	bottom: 1; 
+	font-size:21; 
+	}
+
+	.eng {
+	text-decoration: underline; 
+	text-align: right; 
+	width: 21vw; 
+	font-size: 20; 
+	line-height: 19px;
+	float:left;
+	display:inline;
+	margin: -1vh 0vh 3vh -1vh; 
+	z-index: 10; 
+	}
+		
+	.esp {
+	font-style: italic; 
+	text-align: left; 
+	width: 19vw; 
+	font-size: 21;
+	line-height: 19px; 
+	float:left;
+	display:inline; 
+	margin: -1vh 0vh 3vh 0vw; 
+	z-index: 10; 
+	}
+	
+	.engfirst {
+	text-decoration: underline; 
+	text-align: right; 
+	width: 21vw; 
+	font-size: 20; 
+	line-height: 19px;
+	float:left;
+	display:inline;
+	margin: -1vh 0vh 0vh -1vh; 
+	z-index: 10; 
+	}
+		
+	.espfirst {
+	font-style: italic; 
+	text-align: left; 
+	font-size: 21;
+	line-height: 19px; 
+	width: 19vw;
+	float:left;
+	display:inline; 
+	margin: -1vh 0vh 0vh 0vw; 
+	z-index: 10; 
+	}
+	
+
+	.break {
+	width: 30vw; 
+	color: black; 
+	z-index: -10: 
+	}
+	
+
+
+
+	.febmain {
+	z-index: -9; 
+	display: none;
+	position: fixed; 
+	bottom:0; 
+	width: 100vw; 
+	left: 0; 
+	}
+/* 
+	
+		
+	.febtreat {
+	display: none;
+	z-index: -9; 
+	position: fixed; 
+	bottom:0; 
+	height: 39vw; 
+	right: 0; 
+	}
+	
+ */
+	.courts {
+	z-index: -9; 
+	display: none;
+	position: fixed; 
+ 	bottom: 0;
+	width: 100vw; 
+	left: 0; 
+	}
+	
+
+	.maymain {
+	z-index: -9; 
+	position: fixed;
+ 	bottom: 0; 
+	width: 100vw; 
+	display: none; 
+	left: 0; 
+	}
+	
+	.julymain {
+	z-index: -9; 
+	position: fixed;
+ 	bottom: 0vh; 
+	width: 100vw; 
+	left: 0; 
+	}
+	
+		/* 
+
+	.maytreat1 {
+	z-index: -9; 
+	position: fixed; 
+	bottom:0; 
+	height: 39vw; 
+	right: 0; 
+	}
+	
+			
+	.maytreat2 {
+	z-index: -9; 
+	position: fixed; 
+	bottom:0; 
+	height: 39vw; 
+	right: 0; 
+	}
+	
+	
+	.maytreat3 {
+	z-index: -9; 
+	position: fixed; 
+	bottom:45vh; 
+	width: 30vw; 
+	right: 6vw; 
+	}
+	
+ */
+ 
+ 
+ 
+ 
+ 
+ 
+/* 
+	.febtext {
+	z-index: -9; 
+	position: fixed;
+ 	bottom: 246px;
+	right: 21px;
+	display: none;
+	font-size: 21;
+	}
+	
+	.marchtext {
+	z-index: -9; 
+	position: fixed;
+ 	bottom: 246px;
+	right: 21px; 
+	display: none; 
+	font-size: 21;
+	}
+	
+	.maytext {
+	z-index: -9; 
+	position: fixed;
+ 	bottom: 246px;
+	right: 21px; 
+	font-size: 21;
+	}
+
+
+	.febtextu {
+	z-index: -9; 
+	position: fixed;
+ 	bottom: 246px;
+	right: 21px;
+	display: none;
+	font-size: 21;
+	}
+	
+	.marchtextu {
+	z-index: -9; 
+	position: fixed;
+ 	bottom: 246px;
+	right: 21px; 
+	display: none; 
+	font-size: 21;
+	}
+	
+	.maytextu {
+	z-index: -9; 
+	position: fixed;
+ 	bottom: 246px;
+	right: 21px; 
+	font-size: 21;
+	}
+ */
+
+
+	.febtext {
+	z-index: 0; 
+	position: fixed;
+ 	bottom: 129px;
+	right: 0;
+	display: none;
+	font-size: 210;
+	}
+	
+	.marchtext {
+	z-index: 0; 
+	position: fixed;
+ 	bottom: 129px;
+	right: 0; 
+	display: none; 
+	font-size: 210;
+	}
+	
+	.maytext {
+	z-index: 0; 
+	position: fixed;
+ 	bottom: 129px;
+	right: 0; 
+	display: none; 
+	font-size: 210;
+	}
+	
+	.julytext {
+	z-index: 0; 
+	position: fixed;
+ 	bottom: 129px;
+	right: 0; 
+	font-size: 210;
+	}
+
+
+	.febtextu {
+	z-index: 0; 
+	position: fixed;
+ 	bottom: 129px;
+	right: 0;
+	display: none;
+	font-size: 210;
+	}
+	
+	.marchtextu {
+	z-index: 0; 
+	position: fixed;
+ 	bottom: 129px;
+	right: 0; 
+	display: none; 
+	font-size: 210;
+	}
+	
+	.maytextu {
+	z-index: 0; 
+	position: fixed;
+ 	bottom: 129px;
+	right: 0; 
+	display: none; 
+	font-size: 210;
+	}
+
+	.julytextu {
+	z-index: 0; 
+	position: fixed;
+ 	bottom: 129px;
+	right: 0; 
+	font-size: 210;
+	}
+
+
+</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="Sites.js"></script>
+
+</head>
+
+
+
+
+<body>
+
+
+
+<img class=oralo src="OralO.png" >
+
+
+
+
+<!-- 
+<div class=eng>
+<a href="4_A_W.html">
+ENTER<br>
+ENTER<br>
+ENTER<br>
+"HORIZON OF EVENTS"<BR>
+3/13/2017<br>
+By Aleph Escobedo<br>
+Coded by Jesus Benigno Gutierrez Romero<br>
+Translated by Jessica Sequeira<br>
+ENTER<br>
+ENTER<br>
+ENTER<br></a>
+</div>
+<div class=esp>
+<a href="4_A_W.html">
+ENTRADA<br>
+ENTRADA<br>
+ENTRADA<br>
+"HORIZONTE DE SUCESOS"<BR>
+13/3/2017<br>
+Por Aleph Escobedo<br>
+Programado por Jesus Benigno Gutierrez Romero<br>
+Traducido por Jessica Sequeira<br>
+ENTRADA<br>
+ENTRADA<br>
+ENTRADA<br></a>
+</div>
+<div class=break>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+</div>
+ -->
+
+<div class=july>
+<div class=eng>
+<a href="Let/ters.html">
+"Letters"<BR>
+7/31/2017<br>
+By Gwen Harper<br>
+Coded by Tim Farnam<br>
+</div></a>
+<div class=esp>
+<a href="Let/ras.html">
+"Letras"<BR>
+31/7/2017<br>
+Por Gwen Harper<br>
+Programado por Tim Farnam<br>
+Traducido por Arturo Moreno<br><br><br><br><br>
+</a>
+</div>
+<div class=break>
+.                                            
+</div>
+
+
+
+<div class=eng>
+<a href="Anac/ronia.html">
+"Anachronism"<BR>
+7/31/2017<br>
+By Hugo D&iacute;az<br>
+</div></a>
+<div class=esp>
+<a href="Anac/ronia.html">
+"Anacron&iacute;a"<BR>
+31/7/2017<br>
+Por Hugo D&iacute;az<br><br><br><br><br>
+</a>
+</div>
+<div class=break>
+.                                            
+</div>
+
+
+<div class=eng>
+<a href="Piano/BocaMouth.html">
+"Piano and Mouth"<BR>
+7/31/2017<br>
+By Todd Brozman<br>
+</div></a>
+<div class=esp>
+<a href="Piano/BocaMouth.html">
+"Piano y boca"<BR>
+31/7/2017<br>
+Por Todd Brozman<br><br><br><br><br>
+</a>
+</div>
+<div class=break>
+.                                            
+</div>
+</div>
+
+
+
+<div class=may>
+<a href="Tonight.html">
+<div class=eng>
+<a href=":/Tonight.html">
+"Tonight"<BR>
+5/29/2017<br>
+By David Johnson<br>
+</div></a>
+<div class=esp>
+<a href=":/Estanoche.html">
+"Esta noche"<BR>
+29/5/2017<br>
+Por David Johnson<br>
+Traducido por Mariana Roa Oliva<br><br><br><br><br>
+</a>
+</div>
+<div class=break>
+.                                            
+</div>
+
+<div class=eng>
+<a href="David/YearZero.html">
+"For David, Year Zero"<BR>
+5/29/2017<br>
+By Jonathan Mildenberg<br>
+Coded by Nick Fagan<br>
+</div></a>
+<div class=esp>
+<a href="David/anocero.html">
+"Para Dav&iacute;d, a&ntilde;o cero"<BR>
+29/5/2017<br>
+Por Jonathan Mildenberg<br>
+Programado por Nick Fagan<br><br><br><br><br><br>
+</a>
+</div>
+<div class=break>
+.   
+</div>
+
+
+
+
+<div class=eng>
+<a href="RotWeRot/Pudridos.html">
+"SPRING BREAK"<BR>
+5/29/2017<br>
+Anonymous<br>
+</div>
+<div class=esp>
+"SEMANA SANTA"<BR>
+29/5/2017<br>
+An&oacute;nimx<br>
+<br><br><br><br><br><br>
+</a>
+</div>
+<div class=break>
+.   
+</div>
+</div> 
+
+<div class=march>
+<div class=eng>
+<a href="ElAleph.html">
+"The Aleph"<BR>
+3/27/2017<br>
+By Lucie Castel<br>
+With Gabriela Pi&ntilde;a<br>
+Coded by Luis Del Rio Francos<br>
+</div>
+<div class=esp>
+"El aleph"<BR>
+27/3/2017<br>
+Por Lucie Castel<br>
+Con Gabriela Pi&ntilde;a<br>
+Programado por Luis Del Rio Francos<br><br><br><br><br><br><br>
+</a>
+</div>
+<div class=break>
+.
+</div>
+
+
+<div class=eng>
+<a href="Intern/Surprise.html">
+"Intern Surprise"<BR>
+3/27/2017<br>
+By Virginia Lee Montgomery<br>
+Coded by Zack Schiller<br>
+</div></a>
+<div class=esp>
+<a href="Pasante/Sorpresa.html">
+"Pasante Sorpresa"<BR>
+27/3/2017<br>
+Por Virginia Lee Montgomery<br>
+Programado por Zack Schiller<br>
+Traducido por Agus Giorgi Games<br><br><br><br><br><br><br>
+</a>
+</div>
+<div class=break>
+.
+</div>
+
+
+<div class=eng>
+<a href="Deer.html">
+"Deer"<BR>
+3/27/2017<br>
+By Fabricio Cajeme<br>
+Translated by Theo Ellin Ballew<br>
+</a>
+</div>
+<div class=esp>
+<a href="Venado.html">
+"Venado"<BR>
+27/3/2017<br>
+Por Fabricio Cajeme<br><br><br><br><br><br><br><br>
+<br></a>
+</div>
+<div class=break>
+.
+</div></div>
+
+<div class=feb>
+<div class=eng>
+<a href="Joseph/PINKPANSPERMIA.html">
+"PINKPANSPERMIA"<BR>
+2/27/2017<br>
+By Joseph Buckley<br>
+</a>
+</div>
+<div class=esp>
+<a href="Joseph/ESPERMOSATODAROSA.html">
+"ESPERMOSATODAROSA"<BR>
+27/2/2017<br>
+Por Joseph Buckley<br>
+Traducido por Mario Chanona
+<br><br><br><br><br><br><br>
+</a>
+</div>
+<div class=break>
+.
+</div>
+
+
+
+<div class=eng>
+<a href="http://www.cheche.sexy">
+"The Lost Cactus"<br>
+2/27/2017<br>
+By Che Che<br>
+Translated by Coryna Ogunseitan<br>
+</div>
+<div class=esp>
+"El cactus perdido"<br>
+27/2/2017<br>
+Por Che Che<br>
+<br><br><br><br><br><br><br><br></a>
+</div>
+<div class=break>
+.
+</div>
+
+
+<div class=engfirst>
+<a href="http://www.panopticon.club">
+"panopticon.club"<br>
+2/27/2017<br>
+By Carl Chen and Christian Manuel Perez<br>
+</div>
+<div class=espfirst>
+"panopticon.club"<br>
+27/2/2017<br>
+Por Carl Chen y Christian Manuel Perez<br>
+</a>
+</div>
+</div>
+</div>
+
+<img class=julymain src="Covers/julymain.jpg">
+<img class=maymain src="Covers/maymain.jpg">
+<img class=courts src="Covers/courts.jpg">
+<img class=febmain src="Covers/febmain.jpg">
+
+
+<div class=febtext><i>1</div>
+<div class=marchtext><i>2</i></div>
+<div class=maytext><i>3</div>
+<div class=julytext><i>4</div>
+
+<div class=febtextu><u></i></i></i>1</div>
+<div class=marchtextu><u></i>2</i></div>
+<div class=maytextu><u></i>3</div>
+<div class=julytextu><u></i>4</i></div>
+
+
+
+<div class=now><a href="Sites.html"><u>Sites</u><i>Sitios</i></div></a>
+
+<div class=info><a href="Info.html"><u>Info</u><i>Info</i></div></a>
+
+<div class=somos><a href="Gente.html"><u>People</u><i>Participantes</i></div></a>
+
+<div class=tienda><a href="Gear.html"><u>Gear</u><i>Tienda</i></div></a>
+
+<div class=face><a href="https://www.facebook.com/oral.pub"><u>FB</u><i>Face</i></div></a>
+
+<div class=twit><a href="https://www.instagram.com/oral.pub/"><u>Insta</u><i>Insta</i></div></a>
+
+
+
+</body>
+
+<html>

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: mrsEaves;
+  src: url(./font/MrsEavesRoman_Regular.ttf); }
+#homeCircle {
+  background-color: #0f0f0f;
+  border-radius: 50%;
+  width: 15%;
+  height: 15vw; }
+
+#homeCircleContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.titleCard {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+body {
+  font-family: mrsEaves;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: white; }
+
+video {
+  position: fixed;
+  height: inherit;
+  width: inherit; }
+
+.player {
+  height: 0;
+  width: 0; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ORAL::El Aleph</title>
+<link rel="shortcut icon" href="OralO.png" />
+<meta name="description" content="ORAL::El Aleph por Lucie Castel">
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+
+<video id="vid" video autobuffer autoplay loop>
+  <source id="mp4" src="video.mp4" type="video/mp4">
+</video>
+
+
+<video id="audio" video autobuffer loop>
+  <source id="mp4" src="audio.mp4" type="video/mp4">
+</video>
+
+
+<!-- <div class="light"></div> -->
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tracking-min.js"></script>
+<script type="text/javascript">
+
+	relocate();
+	center = { x: ww*0.4, y: wh*0.4 }
+
+	var vid = document.getElementById("vid");
+	var audio = document.getElementById("audio");
+  tracking.ColorTracker.registerColor('white', function(r, g, b) {
+    var dx = r - 255;
+    var dy = g - 255;
+    var dz = b - 255;
+    if ((b - g) >= 100 && (r - g) >= 60) {
+      return true;
+    }
+    return dx * dx + dy * dy + dz * dz < 3500;
+  });
+  var tracker = new tracking.ColorTracker(['white']);
+  tracker.setMinDimension(5);
+  tracking.track('#vid', tracker);
+  tracker.on('track', function(event) {
+    if(event.data[0]) {
+    	rect = event.data[0];
+    	center = { x: (rect.x * offsetx) + rect.width - (rect.width/2), y: (rect.y * offsety) + rect.height - (rect.height/2) }
+      // $(".light").css({ left: rect.x * offsetx, width: rect.width, top: rect.y * offsety, height: rect.height })
+    };
+  });
+
+  var resizeTimer;
+	$(window).on('resize', function() {
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(function() {
+			relocate();
+  		tracking.track('#vid', tracker);
+		}, 200);
+	})
+
+	$(document).on('mousemove', function(e) {
+
+		p1 = { x: e.pageX, y: e.pageY }
+
+		topBottom = p1.y / wh
+
+		vid.volume = topBottom
+
+		console.log(topBottom); 
+
+    diffX = p1.x - center.x,
+    diffY = p1.y - center.y,
+    radius = Math.abs(Math.sqrt(diffX*diffX + diffY*diffY));
+    if(ww/wh < 1) {
+    	maxRadius = wh - center.y;
+    } else {
+    	maxRadius = ww - center.x;
+    }
+    volume = (maxRadius - radius)/maxRadius;
+    volume = Math.pow(volume, 4);
+    // console.log(volume);
+    if(volume >= 1) {
+    	audio.volume = 1;
+    }
+    if(volume <= 0) {
+    	audio.volume = 0;
+    } 
+    if(volume > 0 && volume < 1) {
+    	audio.volume = volume;
+    }
+	})
+
+
+    $('video').on('play', function (e) {
+		  audio.play()
+		});
+
+    function relocate() {
+
+			ww = $(window).width()
+			wh = $(window).height()
+			ratio = ww/wh;
+			if(ratio < 1.5) {
+				offsety = 1 + ((1.5-ratio) * 0.1);
+				// offsety = 1;
+			} else {
+				offsety = 1;
+			}
+			if(ratio > 2) {
+				offsetx = 1 + ((ratio-2) * 0.025);
+			} else {
+				offsetx = 1;
+			}
+			console.log(offsetx, offsety);
+
+    }
+
+</script>
+</body>
+</html>

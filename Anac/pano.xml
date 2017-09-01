@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama id="node1" hideabout="1">
+  <input leveltilesize="510" width="2048" levelbias="0.400" overlap="1" height="2048" leveltileurl="tiles/escena1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" levelbiashidpi="0.400" levelingroll="0">
+    <level width="2048" predecode="0" height="2048" preload="0"/>
+    <level width="1024" predecode="0" height="1024" preload="0"/>
+    <level width="512" predecode="0" height="512" preload="0"/>
+    <level width="256" predecode="1" height="256" preload="1"/>
+    <preview color="0x808080" strip="1"/>
+  </input>
+  <view pannorth="0" fovmode="0">
+    <start fov="48.4" tilt="0" pan="-0.34"/>
+    <min fov="5" tilt="-24.1836" pan="-180"/>
+    <max fov="120" tilt="24.1836" pan="180"/>
+  </view>
+  <userdata datetime="" info="" comment="" description="" author="" source="" longitude="-99.086483" title="COLLAGE" tags="" latitude="19.422369" copyright=""/>
+  <hotspots wordwrap="1" width="180" height="20">
+    <label enabled="0" backgroundcolor="0xffffff" textcolor="0x000000" wordwrap="1" width="180" background="1" borderalpha="1" borderradius="1" border="1" height="20" backgroundalpha="1" bordercolor="0x000000" textalpha="1"/>
+    <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" handcursor="1" backgroundalpha="0.2509803921568627" bordercolor="0x0000ff"/>
+  </hotspots>
+  <media>
+    <video pansize="10.000" stretch="1.100" mode="3" height="320" width="320" pan="-88.170" level="0.100" handcursor="0" loop="0" tiltsize="10.000" fov="3.680" tilt="-5.260" id="Element01" ambientlevel="0.500" clickmode="2" rotx="-1.000" roty="66.000" field="90.000" rotz="0.000">
+      <source url="media/corazon2.mp4"/>
+    </video>
+    <video pansize="10.000" stretch="1.700" mode="2" height="320" width="320" pan="-20.590" level="1.000" handcursor="0" loop="0" tiltsize="10.000" fov="2.760" tilt="-5.770" id="Element02" ambientlevel="0.000" clickmode="0" rotx="0.000" roty="0.000" field="90.000" rotz="0.000">
+      <source url="media/corazon.mp4"/>
+    </video>
+    <video pansize="10.000" stretch="1.000" mode="3" height="320" width="320" pan="-84.540" level="0.200" handcursor="0" loop="0" tiltsize="10.000" fov="2.840" tilt="-5.570" id="Element03" ambientlevel="0.000" clickmode="4" rotx="0.000" roty="70.000" field="90.000" rotz="0.000">
+      <source url="media/corazon2.mp4"/>
+    </video>
+    <video pansize="10.000" stretch="1.000" mode="1" height="320" width="568" pan="38.480" level="1.000" handcursor="0" loop="0" tiltsize="10.000" fov="6.442" tilt="-1.010" id="Element04" ambientlevel="0.000" clickmode="0" rotx="-59.000" roty="3.000" field="90.000" rotz="0.000">
+      <source url="media/nubesFA.mp4"/>
+    </video>
+    <video pansize="10.000" stretch="1.000" mode="1" height="320" width="320" pan="147.460" level="1.000" handcursor="0" loop="0" tiltsize="10.000" fov="6.990" tilt="-3.840" id="Element05" ambientlevel="0.000" clickmode="2" rotx="0.000" roty="-48.000" field="90.000" rotz="1.000">
+      <source url="media/corazon2_1.mp4"/>
+    </video>
+    <video pansize="10.000" stretch="1.000" mode="1" height="320" width="320" pan="140.240" level="0.600" handcursor="0" loop="0" tiltsize="10.000" fov="4.230" tilt="-4.640" id="Element06" ambientlevel="0.000" clickmode="2" rotx="5.000" roty="-58.000" field="90.000" rotz="4.000">
+      <source url="media/corazon2_2.mp4"/>
+    </video>
+    <video pansize="10.000" stretch="1.700" mode="1" height="320" width="320" pan="174.060" level="0.100" handcursor="0" loop="0" tiltsize="10.000" fov="2.770" tilt="-5.980" id="Element07" ambientlevel="0.000" clickmode="2" rotx="0.000" roty="0.000" field="90.000" rotz="0.000">
+      <source url="media/corazon.mp4"/>
+    </video>
+    <video pansize="10.000" stretch="1.000" mode="3" height="320" width="320" pan="-114.100" level="0.100" handcursor="0" loop="0" tiltsize="10.000" fov="13.440" tilt="-4.340" id="Element08" ambientlevel="0.100" clickmode="2" rotx="0.000" roty="0.000" field="90.000" rotz="0.000">
+      <source url="media/corazon2_3.mp4"/>
+    </video>
+    <video pansize="10.000" stretch="1.000" mode="1" height="320" width="320" pan="84.710" level="1.000" handcursor="0" loop="0" tiltsize="10.000" fov="14.910" tilt="-4.220" id="Element09" ambientlevel="0.000" clickmode="2" rotx="0.000" roty="0.000" field="90.000" rotz="0.000">
+      <source url="media/corazon2_3.mp4"/>
+    </video>
+  </media>
+  <transition enabled="0" zoomin="0" type="crossdissolve" blendcolor="0x000000" zoomoutpause="1" zoomfov="20" blendtime="1" softedge="0" zoomspeed="2" zoomout="0"/>
+  <autorotate nodedelay="0.00" speed="-0.400" noderandom="1" returntohorizon="1.000" useanimation="0" delay="5.00" startloaded="0"/>
+  <control invertwheel="0" lockedkeyboardzoom="0" lockedwheel="0" contextfullscreen="0" dblclickfullscreen="0" invertcontrol="1" simulatemass="1" lockedkeyboard="0" sensitivity="8" speedwheel="1" hideabout="1" lockedmouse="0"/>
+</panorama>
